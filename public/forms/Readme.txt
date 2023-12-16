@@ -9,11 +9,9 @@ The Rising Leaders Alliance (RLA) is a dynamic force based in Kericho, the Green
 ## Mission and Vision
 
 ### Mission
-
 Our mission is to foster growth, empower individuals, and drive positive change in communities through innovative solutions and collaborative efforts.
 
 ### Vision
-
 To create a world where businesses thrive, communities prosper, and every individual has the opportunity to reach their full potential.
 
 ## Our Values
