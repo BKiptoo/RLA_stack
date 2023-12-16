@@ -2,84 +2,177 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
   <title>RLA</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
-
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
-<body class="page-services">
-
+<body class="page-index">
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/RLA-logos_white.png" alt="">
+        <img src="assets/img/RLA-logos_white.png" alt="" />
         <h1 class="d-flex align-items-center">RLA</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
+          <li><a href="{{ route('front.home') }}" class="{{ request()->is('home*') ? 'active' : '' }}">Home</a></li>
+          <li><a href="{{ route('front.home', 'about') }}" class="{{ request()->is('about*') ? 'active' : '' }}">About</a></li>
+          <li><a href="{{ route('front.home', 'services') }}" class="{{ request()->is('services*') ? 'active' : '' }}">Services</a></li>
+          <li><a href="{{ route('front.home', 'team') }}" class="{{ request()->is('team*') ? 'active' : '' }}">Team</a></li>
+          <li><a href="{{ route('front.home', 'blog') }}" class="{{ request()->is('blog*') ? 'active' : '' }}">Blog</a></li>
+          <li><a href="{{ route('front.home', 'news') }}" class="{{ request()->is('news*') ? 'active' : '' }}">News</a></li>
+          <li><a href="{{ route('front.home', 'contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>
+      </ul>
+      
+    </nav>
+    
+      <!-- .navbar -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 data-aos="fade-up">Empowering Communities for Lasting Impact</h2>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>
+              At the Rising Leaders Alliance (RLA), we focus on what matters most – the empowerment of communities.
+              We believe in lifting up individuals, providing opportunities, and fostering positive change. Our commitment
+              to community development goes beyond rhetoric, aiming to create a sustainable and impactful future for all.
+              Join us in our journey to make a real difference and build a community where every individual's potential
+              can flourish.
+            </p>
+          </blockquote>
+
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="contact.html" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=7PIji8OubXU&pp=ygUPbmF0dXJlIHZpZGVvIDRr"
+              class="glightbox btn-watch-video d-flex align-items-center" data-type="video" data-autoplay="true"
+              data-controls="1" data-vimeo-id="7PIji8OubXU" target="_blank">
+              <i class="bi bi-play-circle"></i><span>Watch Video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
 
   <main id="main">
+    <!-- ======= Why Choose Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>About Us</h2>
+        </div>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/services-header.jpg');">
-      <div class="container position-relative d-flex flex-column align-items-center">
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+          <div class="col-xl-7 slides position-relative">
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Our Vision and Mission</h3>
+                    <h4 class="mb-3">
+                      Discover our commitment to fostering growth and making a positive impact.
+                    </h4>
+                    <p>
+                      <strong>Our Vision:</strong> To create a world where businesses thrive, communities prosper, and
+                      every individual has the opportunity to reach their full potential. We envision a future where
+                      sustainable development and positive impact are the driving forces behind societal growth.
+                    </p>
 
-        <h2>Services</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Services</li>
-        </ol>
+                  </div>
+                </div>
+                <!-- End slide item -->
 
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Our Values</h3>
+                    <h4 class="mb-3">
+                      Explore the principles guiding our commitment to excellence.
+                    </h4>
+                    <p>
+                      <strong>Integrity:</strong> Upholding honesty and ethical conduct, we build trust with our
+                      community and partners.
+
+                      <strong>Excellence:</strong> Striving for the highest quality, we empower local youth and foster
+                      community development.
+
+                      <strong>Innovation:</strong> Embracing creativity, we seek innovative solutions for positive
+                      change.
+
+                      <strong>Community:</strong> Our actions are driven by a sense of responsibility for the well-being
+                      and prosperity of the communities we serve.
+
+                      <strong>Empowerment:</strong> Committed to empowering individuals and businesses, we create
+                      lasting impact through education and support.
+                    </p>
+                  </div>
+                </div>
+                <!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Our Team</h3>
+                    <h4 class="mb-3">
+                      Meet the dedicated individuals driving our organization forward.
+                    </h4>
+                    <p>
+                      Discover the passionate team behind our success. Each member is committed to our shared vision and
+                      values, contributing their unique talents to drive positive change. Learn more about the
+                      individuals who make our mission a reality.
+                    </p>
+                  </div>
+                </div>
+                <!-- End slide item --><!-- End slide item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
-    </div><!-- End Breadcrumbs -->
-
-
+    </section>
+    <!-- End Why Choose Us Section -->
 
     <!-- ======= Our Services Section ======= -->
-    <section id="services-list" class="services-list">
+    <section id="youth-services" class="youth-services">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Our Services</h2>
@@ -186,116 +279,44 @@
     </section>
     <!-- End Our Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Testimonials</h2>
-
-        </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h3>Join Us in Shaping the Future</h3>
+            <p>
+              Discover opportunities for personal growth, community
+              engagement, and leadership development. Let's create a positive
+              impact together!
+            </p>
+            <a class="cta-btn" href="#">Get Involved</a>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
+    <!-- End Call To Action Section -->
 
-  </main><!-- End #main -->
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-posts" class="recent-posts">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Recent Blog Posts</h2>
+        </div>
+    
+        <!-- Check if there are no blog entries -->
+        <div class="row">
+          <div class="col">
+            <h2>No New Blogs</h2>
+            <p>Sorry, there are currently no new blog entries. Check back later for updates!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- End Recent Blog Posts Section -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -374,7 +395,7 @@
         </div>
       </div>
     </div>
-  </footer><!-- End Footer --><!-- End Footer -->
+  </footer>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -391,7 +412,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

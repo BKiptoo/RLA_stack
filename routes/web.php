@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{page?}', function () {
     return view('welcome');
 });
 
-Route::get("/home",[HomeController::class,"index"]); 
+Route::get('/{page?}', [HomeController::class, 'index'])->where('page', 'home|about|services|team|blog|news|contact')->name('front.home');

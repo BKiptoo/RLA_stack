@@ -9,9 +9,9 @@ class HomeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($page = 'home')
     {
-        return view("home");
+        return view('front.' . $page);
     }
 
     /**

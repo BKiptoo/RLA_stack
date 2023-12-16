@@ -48,12 +48,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ route('front.home') }}" class="{{ request()->is('home*') ? 'active' : '' }}">Home</a></li>
+            <li><a href="{{ route('front.home', 'about') }}" class="{{ request()->is('about*') ? 'active' : '' }}">About</a></li>
+            <li><a href="{{ route('front.home', 'services') }}" class="{{ request()->is('services*') ? 'active' : '' }}">Services</a></li>
+            <li><a href="{{ route('front.home', 'team') }}" class="{{ request()->is('team*') ? 'active' : '' }}">Team</a></li>
+            <li><a href="{{ route('front.home', 'blog') }}" class="{{ request()->is('blog*') ? 'active' : '' }}">Blog</a></li>
+            <li><a href="{{ route('front.home', 'news') }}" class="{{ request()->is('news*') ? 'active' : '' }}">News</a></li>
+            <li><a href="{{ route('front.home', 'contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -68,7 +69,7 @@
 
         <h2>Blog Details</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{ route('front.home') }}" class="{{ request()->is('home*') ? 'active' : '' }}">Home</a></li>
           <li>Blog Details</li>
         </ol>
 
