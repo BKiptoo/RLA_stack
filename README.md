@@ -38,6 +38,6 @@ Our success is driven by a passionate team committed to our shared vision and va
 
 ## Contact Us
 
-For inquiries, partnerships, or collaboration opportunities, please contact us at [contact@risingleadersalliance.org](mailto:contact@risingleadersalliance.org).
+For inquiries, partnerships, or collaboration opportunities, please contact us at [contact@risingleadersalliance.org](mailto:risingleadersalliance@gmail.com).
 
 Thank you for your interest in the Rising Leaders Alliance!
