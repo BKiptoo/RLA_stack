@@ -10,8 +10,8 @@
   <meta content="" name="keywords" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="assets/img/RLA-logos_white.png" rel="icon" />
+  <link href="assets/img/RLA-logos_white.png rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{{ route('front.home') }}"" class="logo d-flex align-items-center">
         <img src="assets/img/RLA-logos_white.png" alt="" />
         <h1 class="d-flex align-items-center">RLA</h1>
       </a>
