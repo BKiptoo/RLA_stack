@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Livewire\Admin\Auth\Login;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,8 @@ Route::get('/{page?}', function () {
 });
 
 Route::get('/{page?}', [HomeController::class, 'index'])->where('page', 'home|about|services|team|blog|news|contact')->name('front.home');
+
+// Auth Routes
+Route::middleware(['guest'])->group(function () {
+    Route::get('/admin/auth/login', Login::class)->name('auth.login');
+});
