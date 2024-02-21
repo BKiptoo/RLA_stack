@@ -21,12 +21,13 @@
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
@@ -36,7 +37,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="{{ route('front.home') }}"" class="logo d-flex align-items-center">
+      <a href="{{ route('front.home') }}"class="logo d-flex align-items-center">
         <img src="assets/img/RLA-logos_white.png" alt="" />
         <h1 class="d-flex align-items-center">RLA</h1>
       </a>
@@ -53,9 +54,9 @@
           <li><a href="{{ route('front.home', 'news') }}" class="{{ request()->is('news*') ? 'active' : '' }}">News</a></li>
           <li><a href="{{ route('front.home', 'contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>
       </ul>
-      
+
     </nav>
-    
+
       <!-- .navbar -->
     </div>
   </header>
@@ -303,7 +304,7 @@
         <div class="section-header">
           <h2>Recent Blog Posts</h2>
         </div>
-    
+
         <!-- Check if there are no blog entries -->
         <div class="row">
           <div class="col">
@@ -313,7 +314,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- End Recent Blog Posts Section -->
   </main>
   <!-- End #main -->

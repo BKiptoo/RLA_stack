@@ -21,14 +21,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+
+    <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
@@ -79,11 +80,11 @@
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
-    
+
         <div class="row g-5">
-    
+
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-    
+
             <!-- Check if there are no blog entries -->
             <div class="row">
               <div class="col">
@@ -91,17 +92,17 @@
                 <p>Sorry, there are currently no new blog entries. Check back later for updates!</p>
               </div>
             </div>
-    
+
           </div>
-    
+
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="sidebar ps-lg-4">
               <!-- ... Existing sidebar content ... -->
             </div><!-- End Blog Sidebar -->
           </div>
-    
+
         </div>
-    
+
       </div>
     </section>
     <!-- End Blog Section -->
@@ -177,7 +178,7 @@
                 <i class="bi-geo-alt me-2"></i>
                 Kericho, Kenya
                 <br />
-            
+
               <strong>Phone:</strong> +245742772326<br />
               <strong>Email:</strong> risingleadersalliance@gmail.com<br />
             </p>
