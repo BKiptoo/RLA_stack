@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   /**
   * Requires the "PHP Email Form" library
   * The "PHP Email Form" library is available only in the pro version of the template
@@ -6,13 +6,13 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'risingleadersalliance@gmail.com';
-  if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
-    include($php_email_form);
-} else {
-    die('Unable to load the "PHP Email Form" Library!');
-}
+//   // Replace contact@example.com with your real receiving email address
+//   $receiving_email_address = 'risingleadersalliance@gmail.com';
+//   if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
+//     include($php_email_form);
+// } else {
+//     die('Unable to load the "PHP Email Form" Library!');
+// }
 
 // $contact = new PHP_Email_Form;
 // $contact->ajax = true;
@@ -32,13 +32,13 @@ $contact->smtp = array(
 );
 */
 
-$contact->add_message($_POST['name'] ?? '', 'From');
-$contact->add_message($_POST['email'] ?? '', 'Email');
-$contact->add_message($_POST['message'] ?? '', 'Message', 10);
+// $contact->add_message($_POST['name'] ?? '', 'From');
+// $contact->add_message($_POST['email'] ?? '', 'Email');
+// $contact->add_message($_POST['message'] ?? '', 'Message', 10);
 
-// Send the email and capture the result
-$email_result = $contact->send();
+// // Send the email and capture the result
+// $email_result = $contact->send();
 
-// Output the result (you can handle this result in your JavaScript if using AJAX)
-echo $email_result;
-?>
+// // Output the result (you can handle this result in your JavaScript if using AJAX)
+// echo $email_result;
+?> -->

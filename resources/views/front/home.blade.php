@@ -10,8 +10,8 @@
   <meta content="" name="keywords" />
 
   <!-- Favicons -->
-  <link href="assets/img/RLA-logos_white.png" rel="icon" />
-  <link href="assets/img/RLA-logos_white.png rel="apple-touch-icon" />
+  <link href="{{asset('assets/img/RLA-logos_white.png')}}" rel="icon" />
+  <link href="{{asset('assets/img/RLA-logos_white.png')}}" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,15 +30,15 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="{{asset('assets/css/main.css')}}" rel="stylesheet" />
 </head>
 
 <body class="page-index">
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="{{ route('front.home') }}"class="logo d-flex align-items-center">
-        <img src="assets/img/RLA-logos_white.png" alt="" />
+      <a href="{{ route('front.home') }}" class="logo d-flex align-items-center">
+        <img src="{{asset('assets/img/RLA-logos_white.png')}}" alt="" />
         <h1 class="d-flex align-items-center">RLA</h1>
       </a>
 
@@ -101,7 +101,7 @@
         </div>
 
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+          <div class="col-xl-5 img-bg" style="background-image: url('{{asset('assets/img/why-us-bg.jpg')}}')"></div>
           <div class="col-xl-7 slides position-relative">
             <div class="slides-1 swiper">
               <div class="swiper-wrapper">
